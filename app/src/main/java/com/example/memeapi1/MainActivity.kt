@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
          // Instantiate the RequestQueue.
 
-         progressBar.visibility= View.VISIBLE
+         progressBar.visibility = View.VISIBLE
 
          val queue = Volley.newRequestQueue(this)
          val url = "https://meme-api.herokuapp.com/gimme"
@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
 
                  }).into(image)
 
-                 Toast.makeText(this, "loading", Toast.LENGTH_SHORT).show()
+                 Toast.makeText(this, "Created by virendra ", Toast.LENGTH_SHORT).show()
 
              },
              {
@@ -107,7 +107,7 @@ class MainActivity : AppCompatActivity() {
 
         // this is for send it ...
 
-        val chooser=Intent.createChooser(intent,"share this meme using ....")
+        val chooser = Intent.createChooser(intent,"share this meme using ....")
 
         startActivity(chooser)
 
